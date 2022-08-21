@@ -15,11 +15,11 @@ app.get("/", (request: Request, response: Response) => {
 }); //Send HTML
 
 app.get("/user", (request: Request, response: Response) => {
-  return {
+  return response.json({
     name: "thalles",
     age: "261",
     skills: "back end developer at nodejs",
-  };
+  });
 }); // Send JSON
 
 /*---------------------------------------------------*/
